@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Hero from '../components/Hero.astro';
+import Content from '../components/Content.astro';
+import Footer from '../components/Footer.astro';
+import CallToAction from '../components/CallToAction.astro';
+---
+
+<Layout title="Home Secretaria" description="Secretaria impulsada con la IA" image="" author="kevin juan jacque castillo">
+	<Hero />
+	<section class="mx-auto container">
+		<h2 class="text-white text-4xl font-bold text-center my-12">Features</h2>
+		<ul class="grid grid-cols-1  md:grid-cols-2 mx-auto lg:grid-cols-3 gap-10 px-8 text-white">
+			<Card title='Secretaria virtual' body='Nuestra Secretaria Virtual gestiona tus tareas y calendario de manera eficiente. Interactúa por voz o texto para mantener todo bajo control.'>
+				<svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class=" text-secondary icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+					
+					
+				</svg>
+			</Card>
+			<Card title='Iteractua por voz' body='Hablarle a nuestra Secretaria Virtual es increíble: organiza tus tareas y calendario solo con tu voz.'>
+				<svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class=" text-secondary icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+
+			</Card>
+			<Card title='Gestiona tu calendario' body='Gestionar tu calendario nunca fue tan fácil. Con nuestra Secretaria Virtual, organizas tus citas y eventos de manera eficiente, interactuando por voz o texto. Olvídate de olvidos y disfruta de una planificación sin esfuerzo.'>
+				<svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="text-secondary icon icon-tabler icons-tabler-outline icon-tabler-calendar-month"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M7 14h.013" /><path d="M10.01 14h.005" /><path d="M13.01 14h.005" /><path d="M16.015 14h.005" /><path d="M13.015 17h.005" /><path d="M7.01 17h.005" /><path d="M10.01 17h.005" /></svg>
+
+			</Card>
+		</ul>
+	</section>
+
+
+
+
+	<section>
+
+		<Content >
+			<div class="p-10 bg-mix rounded-lg" slot="left">
+				<video  class="rounded-lg" src="/video/lasted.mov" autoplay  muted loop   />
+			</div>
+			<h2 class="text-white font-semibold text-2xl">Plataforma</h2>
+			<p class="text-lg text-white">
+				Nuestra Secretaria Virtual cuenta con una interfaz clara, entendible y fácil de usar. Todo está diseñado para que puedas gestionar tus tareas y calendario sin complicaciones, permitiéndote enfocarte en lo que realmente importa.
+			</p>
+		  </Content>
+		  <Content >
+			<img slot="right" class="rounded-lg" src="/img/secretarIA.png" />
+			<h2 class="text-white font-semibold text-2xl">Habla y Escucha a tu Secretaria Virtual</h2>
+			<p class="text-lg text-white">
+				Con nuestra función de Interacción por Voz, puedes hablarle a tu Secretaria Virtual y recibir respuestas de manera clara y natural. Añade y gestiona tus tareas, organiza tu calendario, y obtén recordatorios, todo sin necesidad de escribir. Es la manera más cómoda y eficiente de mantener tu día en orden.
+			</p>
+		  </Content>
+	</section>
+	<CallToAction />
+	<Footer />
+</Layout>
+
+

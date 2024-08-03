@@ -1,0 +1,36 @@
+{
+  "name": "secretaria",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.36",
+    "@astrojs/check": "^0.8.1",
+    "@astrojs/react": "^3.6.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "ai": "^3.2.29",
+    "astro": "^4.11.5",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.12",
+    "openai": "^4.52.7",
+    "preact": "^10.22.1",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.13.0",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/react-big-calendar": "^1.8.9"
+  }
+}

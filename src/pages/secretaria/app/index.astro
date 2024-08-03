@@ -1,0 +1,12 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import MySidebar from "../../../components/app/Calendar.jsx";
+
+export const prerender = false
+
+
+---
+
+<Layout title="Secretaria" description="Secretaria impulsada con la IA" image="" author="kevin juan jacque castillo">
+    <MySidebar client:only="react"   />
+</Layout>

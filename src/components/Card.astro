@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+
+	<li class="flex p-5 flex-col gap-4 relative border-2 bg-[hsl(210, 8%, 31%)] before:-z-10 before:absolute before:-right-2 before:-bottom-2 before:bg-dark100 before:rounded-lg before:inset-0 rounded-lg p-5 after:bg-mix after:inset-0 after:left-3 after:top-3 after:-bottom-4 after:rounded-lg after:-right-4 after:-z-20 after:absolute after:border-inherit">
+
+		<slot
+		></slot>  
+		<div class="z-10 flex flex-col gap-2" data-astro-cid-ezsi7upz="">
+			<h3 class="text-2xl font-semibold">{title}</h3>
+			<p class=" font-thin">
+			  {body}
+			</p>
+		  </div>
+	  </li>
+
+
