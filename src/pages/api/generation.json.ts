@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { format, fromUnixTime } from 'date-fns';
+import { format } from 'date-fns';
 
 
 import { createOpenAI } from '@ai-sdk/openai';
